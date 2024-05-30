@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body >
+    <header>
+        <div data-aos="fade-up">
+            <data-aos-duration="3000">
+            <h1 class="display-4 fw-bold mb-5 mx-auto">Welcome</h1>
+        </div>
+        <button id="scrollButton" onclick="scrollToNextSection()"><i class="fas fa-chevron-down"></i></button>
+    </header>
+    <main >
+    
+        <section id="content" class="container mt-5">
+
+        <div data-aos="zoom-in" class="mb-5">
+            <h1 class="display-4 fw-bold mb-5 mx-auto">Welcome,You Can Connect To AOS Panel Here</h1>
+            <iframe src="https://sh_ao.g8way.io/" frameborder="0" scrolling="no"></iframe>
+        </div>
+
+        </section>
+    </main>
+    <footer class="py-5 bg-dark text-white mt-auto">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://github.com/oguzhanenes"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/?lang=tr"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.arconnect.io/"><i class="fa-solid fa-link"></i></a>
+            </div>
+            <span class="mb-5 mx-auto">Copyright © 2024,</span>
+            <span  class="mb-5 mx-auto">Developed By <a style="text-decoration: none;" href="http://github.com/oguzhanenes">Oğuzhan</a></span>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-wo9fnM5lKEUA7I1W9tTQmUyB8jA2cwTHT6gYYo7czpB7gjF9Pog9OdKE45BcJbdF7AWV3M0DRNXeeSgn+ZflbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script>
+        function scrollToNextSection() {
+            document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
